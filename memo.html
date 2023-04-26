@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한상헌의 메모장</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="memo.css">
+
+    <!-- toastui-editor -->
+    <link rel="stylesheet" href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
+    <script src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
+
+</head>
+
+<body>
+    <main>
+        <div class="flex">
+            <h1>Sanghun's MEMO</h1>
+
+            <label class="switch-button">
+                <input type="checkbox" onclick="darkMode()" />
+                <span class="on-off-switch"></span>
+            </label>
+        </div>
+        <div class="flex">
+            <section id="date">
+                <time datetime="">
+                    <span class="year"></span>
+                    <span class="month"></span>
+                    <span class="date"></span>
+                </time>
+            </section>
+        </div>
+
+        <section id="memo">
+            <label for="title" class="a11y-hidden">제목</label>
+            <input type="text" id="title" placeholder="제목을 입력해주세요." />
+            <div id="editor"></div>
+
+            <div class="bottom-btn">
+                <button class="btn" onclick="saveNote()">확인</button>
+                <button class="btn" onclick="resetConfirm()">초기화</button>
+            </div>
+        </section>
+
+        <section id="display"></section>
+    </main>
+
+
+    <script src="memo.js"></script>
+</body>
+
+</html>
