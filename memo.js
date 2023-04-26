@@ -96,7 +96,7 @@ function deleteConfirm() {
     }
 }
 
-// 다크 모드
+// 다크 모드 구현
 function darkMode() {
     let body = document.body;
     body.classList.toggle('darkMode');
@@ -119,7 +119,7 @@ function darkMode() {
     }
 }
 
-// 날짜
+// 날짜 구현
 const $year = document.querySelector('.year');
 const $month = document.querySelector('.month');
 const $date = document.querySelector('.date');
